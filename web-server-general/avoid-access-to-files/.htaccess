@@ -1,0 +1,25 @@
+<FilesMatch "(\.htaccess|\.htpasswd|\.ini|\.log|\.conf)">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</FilesMatch>
+
+<FilesMatch "\.(php|pl|py|cgi|asp|rb)$">
+    Deny from all
+</FilesMatch>
+
+<Directory "segreta">
+    Deny from all
+</Directory>
+
+<FilesMatch "^\.ht">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</FilesMatch>
+
+<Files "config.php">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</Files>

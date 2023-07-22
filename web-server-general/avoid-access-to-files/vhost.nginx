@@ -1,0 +1,23 @@
+location ~ /\.(htaccess|htpasswd|ini|log|conf)$ {
+    deny all;
+}
+
+
+location ~* \.(php|pl|py|cgi|asp|rb)$ {
+    deny all;
+}
+
+
+location /segreta {
+    deny all;
+}
+
+
+location ~ /\.ht {
+    deny all;
+}
+
+
+location /config.php {
+    deny all;
+}

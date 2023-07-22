@@ -1,0 +1,9 @@
+# Redirect da www a non-www
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.il_tuo_dominio\.com [NC]
+RewriteRule ^(.*)$ https://il_tuo_dominio.com/$1 [L,R=301]
+
+# Redirect da non-www a www
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^il_tuo_dominio\.com [NC]
+RewriteRule ^(.*)$ https://www.il_tuo_dominio.com/$1 [L,R=301]

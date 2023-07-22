@@ -1,0 +1,16 @@
+map $http_user_agent $bad_bot {
+    default 0;
+    "~*BadBot" 1;
+    "~*EvilBot" 1;
+}
+
+server {
+    listen 80;
+    server_name il_tuo_dominio.com;
+
+    if ($bad_bot) {
+        return 403;
+    }
+
+    # Resto delle tue configurazioni del server...
+}

@@ -1,0 +1,14 @@
+server {
+    listen 80;
+    server_name www.il_tuo_dominio.com;
+
+    return 301 https://il_tuo_dominio.com$request_uri;
+}
+
+
+server {
+    listen 80;
+    server_name il_tuo_dominio.com;
+
+    return 301 https://www.il_tuo_dominio.com$request_uri;
+}
