@@ -1,5 +1,5 @@
 location ~ \.(jpg|jpeg|png|gif)$ {
-    valid_referers none blocked il_tuo_dominio.com;
+    valid_referers none blocked example.com;
     if ($invalid_referer) {
         return 403;
     }

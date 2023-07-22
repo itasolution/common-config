@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name il_tuo_dominio.com;
+    server_name example.com;
 
     location / {
         return 301 https://$host$request_uri;
@@ -9,11 +9,11 @@ server {
 
 server {
     listen 443 ssl;
-    server_name il_tuo_dominio.com;
+    server_name example.com;
 
-    # Altre direttive SSL come il percorso del certificato SSL e della chiave
+    # Other SSL directives such as the SSL certificate and key path.
 
     location / {
-        # Le tue regole per gestire le richieste HTTPS
+        # Your rules to handle HTTPS requests.
     }
 }

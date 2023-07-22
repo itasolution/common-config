@@ -6,11 +6,11 @@ map $http_user_agent $bad_bot {
 
 server {
     listen 80;
-    server_name il_tuo_dominio.com;
+    server_name example.com;
 
     if ($bad_bot) {
         return 403;
     }
 
-    # Resto delle tue configurazioni del server...
+    # Other configurations...
 }

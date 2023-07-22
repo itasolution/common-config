@@ -8,7 +8,7 @@
     Deny from all
 </FilesMatch>
 
-<Directory "segreta">
+<Directory "secret">
     Deny from all
 </Directory>
 

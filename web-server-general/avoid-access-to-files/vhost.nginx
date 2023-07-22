@@ -8,7 +8,7 @@ location ~* \.(php|pl|py|cgi|asp|rb)$ {
 }
 
 
-location /segreta {
+location /secret {
     deny all;
 }
 

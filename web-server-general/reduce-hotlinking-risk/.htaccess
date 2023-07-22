@@ -1,4 +1,4 @@
 RewriteEngine On
 RewriteCond %{HTTP_REFERER} !^$
-RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?il_tuo_dominio.com [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?example.com [NC]
 RewriteRule \.(jpg|jpeg|png|gif)$ - [NC,F,L]
